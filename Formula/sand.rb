@@ -6,10 +6,10 @@ class Sand < Formula
   head "https://github.com/khoi/sand.git", branch: "main"
 
   bottle do
-    root_url "https://github.com/khoi/sand/releases/download/v1.0.0"
-    rebuild 1
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "ef0039463571ca7225600fcbd9472432f74d790b7fd011bf6bdd61879899bfa7"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "c12c7e96ccf915dc6098d6d72f29ef876146e94c4c88390c3634e4a8097aa81c"
+    root_url "https://github.com/khoi/sand/releases/download/v1.0.1"
+    rebuild 2
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "14baabbc91cc6f5ba75fbebabd81d2609622b0ac605621699b66c6fa476a7d80"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "916406b847d6bbf4e845a252b1798ffc7b28cd48d112b266f0d841330a525bc2"
   end
 
   depends_on :macos
