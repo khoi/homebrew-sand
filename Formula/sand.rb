@@ -5,6 +5,13 @@ class Sand < Formula
   sha256 "7f11806f87b47529db8457e1292a5daa70e39c9e45efe0f50ab6e46fdc13c4a0"
   head "https://github.com/khoi/sand.git", branch: "main"
 
+  bottle do
+    root_url "https://github.com/khoi/sand/releases/download/v1.0.0"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "ef0039463571ca7225600fcbd9472432f74d790b7fd011bf6bdd61879899bfa7"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "c12c7e96ccf915dc6098d6d72f29ef876146e94c4c88390c3634e4a8097aa81c"
+  end
+
   depends_on :macos
   depends_on "sshpass"
   depends_on "cirruslabs/cli/tart"
