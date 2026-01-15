@@ -1,14 +1,14 @@
 class Sand < Formula
   desc "Run ephemeral macOS VMs via Tart and provision inside each VM"
   homepage "https://github.com/khoi/sand"
-  url "https://github.com/khoi/sand/archive/refs/tags/v1.1.1.tar.gz"
-  sha256 "8829d457fde040ac2d8609106b270a800c525e4d175b019a53d81c48f9f79a08"
+  url "https://github.com/khoi/sand/archive/refs/tags/v1.1.2.tar.gz"
+  sha256 "59879de4993c0dd8a0661e3ce04b74055df698f9b9aa2806931a2da3cf76022b"
   head "https://github.com/khoi/sand.git", branch: "main"
 
   bottle do
-    root_url "https://github.com/khoi/sand/releases/download/v1.1.1"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "b8886194d899f92607bbea7601c9ef7c374ebfd0535ed7e966e86c42af942c22"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "27f213fb2848c1f40caddfa5374623404974d260e1d69be475e0decd3bbb1fdc"
+    root_url "https://github.com/khoi/sand/releases/download/v1.1.2"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "19564b731d3be6396a2df48184653b9425bab1f6c9016711c0450f1e7ea3b754"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "a37568a37043f085045cf85d5ce9c300a0351a236a1387fc8796b138fc6ef96c"
   end
 
   depends_on :macos
